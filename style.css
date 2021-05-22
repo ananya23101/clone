@@ -1,7 +1,16 @@
+*{
+    overflow-x: visible;
+    margin: 0;
+    padding: 0;
+}
 .navbar{
     display: flex;
-    padding: 60px, 160px;
+   width: 100%;
     background-color: rgb(255, 253, 253);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
 }
 .navlogo{
     width: 130px;
@@ -9,7 +18,9 @@
     border-radius: 5%;
 }
 .navlinks{
-flex: 1;
+display: flex;
+align-items: center;
+align-self: center;
 }
 .navlinks ul{
      margin-left: 0px;
@@ -20,120 +31,143 @@ flex: 1;
     display: inline-block;
     margin-left: 0px;
     margin-right: 10px;
-    padding: 10px, 0px;
     font-size: 12px;
 }
 .size{
     text-align: left;
+    margin-left: 10px;
     font-size: 15px;
     color: rgb(197, 197, 197);
 }
+.size a{
+    color: rgb(197, 197, 197);
+}
 .block{
-    margin-left: -10px;
-    margin-right: -10px;
-    margin-top: 0px;
-    padding:  80px;
+    width: 100%;
+    margin-top: 50px;
     background-color: #002c5d;
-    padding-left: 20px;
-    padding-top: 10px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    height: auto;
 }
 .cool{
-    margin-left: 580px;
+    text-align: center;
     color: white
 }
 .box1{
-    width: 8cm;
-    height: 0.8cm;
-    margin-left: 410px;
+    width: 50%;
+    height: auto;
+    margin-left: auto;
     margin-top: 50px;
-    margin-right: 0px;
+    margin-right: auto;
     background: #f7f7f7;
     border-radius: 15px;
-     padding-left: 20px;
      padding-top: 5px;
-     padding-bottom: 200px;
-     padding-right: 300px;
+    padding-bottom: 10px;
+     padding-left: 10px;
+     padding-right: 0px;
+     display: block;
+    align-content: center;
     }
-.box2{
-    margin-top: 10px;
-    margin-bottom: 10px;
-    padding: 80px;
-    width: 11.1cm;
-    height: 0.02cm;
-    background: white;
-    border-radius: 15px;
-}
 .box3{
-    width: 15cm;
+    margin-top: 20px;
+    padding-left: 10px;
+    width: 88%;
     height: 15mm;
+    margin-right: -10px;
     border-radius: 15px;
+    border-style: groove;
+    margin-left: 30px;
+    margin-right: auto;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 .box4{
     margin-top: 20px;
-    width: 15.2cm;
+    width: 90%;
+    margin-bottom: 10px;
     height: 15mm;
     background: #0475e5;
     color: white;
     font-size: 20px;
     border-radius: 15px;
+    margin-left: 30px;
+    margin-right: auto;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   
 }
 .line{
-    margin-left: 720px;
+    text-align: center;
     margin-top: 45px;
     color:white;
 }
 .box5{
-    width: 8cm;
-    height: 3cm;
-    margin-left: 410px;
+    width: 50%;
+    height: auto;
+    margin-left: auto;
     margin-top: 50px;
-    margin-right: 0px;
+    margin-right: auto;
     background: #f7f7f7;
     border-radius: 15px;
-     padding-left: 20px;
      padding-top: 5px;
-     padding-bottom: 200px;
-     padding-right: 300px;
+     padding-bottom: 10px;
+     padding-left: 10px;
+     padding-right: 0px;
+     display: block;
+    align-content: center;
     }
     .box6{
-        width: 15cm;
-        height: 15mm;
-        border-radius: 15px;
         margin-top: 20px;
-        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        padding-left: 10px;
+        width: 88%;
+        height: 15mm;
+        margin-right: -10px;
+        border-radius: 15px;
+        border-style: groove;
+        margin-left: 30px;
+        margin-right: auto;
+        font-family: -app
     }
 .hall{
     margin-left: 100px;
     margin-top: 30px;
 }
+.hall h2{
+    margin-left: 80px;
+}
+.hall p{
+    margin-left: 80px;
+}
 .box7{
-    width: 8cm;
+    width: 40%;
     height: 5cm;
     background: white;
     border-radius: 10px;
     border-style: solid;
     border-color: rgb(61, 122, 255);
     border-width: 1px;
+   
 }
 .hap{
-    flex: 5;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin-left: auto;
+   margin-right: auto;
+   z-index: 10;
+   flex-shrink: 2;
 }
 .hap ul{
-    margin-left: -50px;
-     display: inline;
+  display: flex;
+   flex-shrink: 2;
 }
 .hap ul li{
     list-style: none;
-    display: inline-block;
-    margin-left: 20px;
-    margin-right: 80px;
-    padding: 10px, 50px;
+    display: inline;
+    margin-left: 80px;
+    margin-right: auto;
     font-size: 17px;
-    margin-top: 10px;
+    margin-top: 20px;
     text-align: center;
-    
 }
 .but{
     margin-top: 20px;
@@ -147,6 +181,7 @@ flex: 1;
 .img{
     width: 50px;
     margin-top: 10px;
+    
 }
 .img1{
     width: 30px;
@@ -155,34 +190,136 @@ flex: 1;
     margin-top: 0px;
     border-radius: 5%;
     margin-bottom: 0px;
-    
+   
 }
 .red{
     margin-bottom: 10px;
     color: black;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
 }
 .log{
     margin-left: 400px;
+    
 }
 .dud{
     margin-top: 30px;
     width: 100%;
-    height: 37cm;
+    height: auto;
     background-color: #f5f5f5;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+.dud3{
+    max-width: 570px;
+
+    margin-left: 20px;
+    margin-right: 10px;
 }
 .dud1{
-    margin-left: 80px;
+    margin-left: 40px;
     margin-bottom: 10px;
-    padding-top: 20px;
-    padding-left: 40px;
-    padding-right: 200px;
-    margin-right: 300px;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
 }
 .dud2{
     margin-top: 20px;
     margin-bottom: 20px;
     color: black;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+}
+@media screen and (max-width: 650px){
+    .navbar{
+        display: flex;
+        height: auto;
+    }
+    .navlogo{
+        margin-left: 0;
+    }
+    .navlinks ul{
+        display: none;
+    }
+    .block{
+        margin-top: 40px;
+        width: 100%;
+        text-align: center;
+        overflow-x: hidden;
+    }
+    .cool{
+        text-align: center;
+        margin-left: 0px;
+        margin-top: 10px;
+    }
+    .box1{
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: left;
+        padding: 0;
+        height: auto;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .box3{
+        width: 90%;
+        border-style: groove;
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+    .box4{
+        width: 95%;
+        margin-left: 10px;
+    }
+    .line{
+        text-align: center;
+        margin-left: 0;
+    }
+    .box5{
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: left;
+        padding: 0;
+        height: auto;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .box6{
+        width: 90%;
+        border-style: groove;
+        margin-left: 10px;
+    }
+    .hap{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    .hap ul{
+        display: block;
+        margin-top: 50px;
+    }
+    .hap ul li{
+        display: block;
+        margin-left: 0px;
+    }
+    .hall h2{
+       margin-left: -80px;
+       text-align: center;
+    }
+    .hall p{
+        margin-left: -80px;
+        text-align: center;
+    }
+    .box7{
+        width: 80%;
+    }
+    .checkbtn{
+       margin-left: 330px;
+       display: block;
+    }
+    #check:checked ~ ul{
+        left: 100%;
+    }
 }
