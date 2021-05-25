@@ -211,7 +211,7 @@ align-self: center;
 .dud3{
     max-width: 750px;
     display: block;
-    margin-left: 100px;
+    margin-left: 0px;
     margin-right: 10px;
 }
 .dud1{
@@ -313,10 +313,5 @@ align-self: center;
     .box7{
         width: 80%;
     }
-    .dud1{
-        margin-left: 20px;
-    }
-    .dud3{
-        margin-left: 10px;
-    }
+    
 }
