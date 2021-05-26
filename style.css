@@ -14,7 +14,7 @@
 }
 .navlogo{
     width: 130px;
-    margin-left: 100px;
+    margin-left: 50px;
     border-radius: 5%;
 }
 .navlinks{
@@ -23,16 +23,23 @@ align-items: center;
 align-self: center;
 }
 .navlinks ul{
-     margin-left: 10px;
-     display: inline;
+  margin-left: 10px;
+  display: flex;
 }
 .navlinks ul li{
     list-style: none;
-    display: inline-block;
+    display: inline;
     margin-left: 10px;
     margin-right: 10px;
     font-size: 12px;
 }
+.navs li:last-child {
+    float: right;
+    right: 10px;
+    top: 0;
+    
+    position: absolute;
+  }
 .size{
     text-align: left;
     margin-left: 10px;
@@ -72,7 +79,7 @@ align-self: center;
 .box3{
     margin-top: 20px;
     padding-left: 10px;
-    width: 88%;
+    width: 90%;
     height: 15mm;
     margin-right: -10px;
     border-radius: 15px;
@@ -83,7 +90,7 @@ align-self: center;
 }
 .box4{
     margin-top: 20px;
-    width: 90%;
+    width: 92%;
     margin-bottom: 10px;
     height: 15mm;
     background: #0475e5;
@@ -118,14 +125,14 @@ align-self: center;
     .box6{
         margin-top: 20px;
         padding-left: 10px;
-        width: 88%;
+        width: 90%;
         height: 15mm;
         margin-right: -10px;
         border-radius: 15px;
         border-style: groove;
         margin-left: 30px;
         margin-right: auto;
-        font-family: -app
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     }
 .hall{
     margin-left: 100px;
@@ -139,7 +146,7 @@ align-self: center;
 }
 .box7{
     width: 40%;
-    height: 5cm;
+    height: max-content;
     background: white;
     border-radius: 10px;
     border-style: solid;
@@ -172,11 +179,12 @@ align-self: center;
 .but{
     margin-top: 20px;
     height: 1cm;
-    width:  5cm;
+    width:  80%;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     background: #004f9e;
     color: white;
     border-radius: 10px;
+    margin-bottom: 10px;
 }
 .red{
     margin-bottom: 10px;
@@ -197,9 +205,6 @@ align-self: center;
     font-size: 1rem;
     margin-right: 2px;
 }
-.log{
-    float: right;
-}
 .dud{
     margin-top: 30px;
     width: 100%;
@@ -213,6 +218,7 @@ align-self: center;
     display: block;
     margin-left: 0px;
     margin-right: 10px;
+    text-align: left;
 }
 .dud1{
     margin-left: 40px;
@@ -262,7 +268,7 @@ align-self: center;
     .box3{
         width: 90%;
         border-style: groove;
-        margin-top: 10px;
+        margin-top: 20px;
         margin-left: 10px;
     }
     .box4{
@@ -286,7 +292,7 @@ align-self: center;
     .box6{
         width: 90%;
         border-style: groove;
-        margin-left: 10px;
+        margin-left: 15px;
     }
     .hap{
         display: block;
@@ -297,6 +303,8 @@ align-self: center;
     .hap ul{
         display: block;
         margin-top: 50px;
+        margin-left: 60px;
+        margin-right: 20px;
     }
     .hap ul li{
         display: block;
@@ -313,5 +321,41 @@ align-self: center;
     .box7{
         width: 80%;
     }
+    .dud3{
+        max-width: 100%;
+    }
     
+}
+@media screen and (max-width: 950px){
+    .navlogo{
+        margin-left: 10px;
+    }
+    .navlinks ul{
+        margin-left: 2px;
+    }
+    .navlinks ul li{
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .navs li:last-child{
+        position: relative;
+        margin-left: 30px;
+    }
+    .box3{
+        margin-left: 8px;
+    }
+    .box4{
+        margin-left: 8px;
+    }
+    .box6{
+        margin-left: 8px;
+    }
+    .hall{
+        margin-left: 0px;
+    }
+    .hap ul li{
+        margin-left: 20px;
+        margin-right: 10px;
+    }
+
 }
